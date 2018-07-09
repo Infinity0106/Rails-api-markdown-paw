@@ -6,7 +6,7 @@ ApiMarkdown to automate your creation of slate documentation based on your paw f
 
 ### Added
 
-- cambio 23
+- Add documentation of changelog and how to set it up.
 
 ### Changed
 
