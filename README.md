@@ -8,17 +8,20 @@ have paw installed in your computer
 
 [PAW](https://mac-torrent-download.net/paw-3-1-7)
 
+have node.js
+have nexe `yarn global add nexe`
+
 ## steps
 
-the strucutre of your paw document should have at the begining a introduction
-endoint that is the first page in slate
+the structure of your paw document should have at the beginning a introduction
+end-point that is the first page in slate
 
-then for every resource geenrate a group with respective endpintos it should look
+then for every resource generate a group with respective end-points it should look
 something like This
 
 introduction
 .
-├── introduction (doesnt make any call just get the description)
+├── introduction (doesn't make any call just get the description)
 ├── Users_app
 | ├── GET users
 | └── POST user
