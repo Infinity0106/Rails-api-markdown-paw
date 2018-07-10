@@ -2,6 +2,16 @@
 const stringTMP = `
 ## {::REQUEST_NAME::}
 
+\`\`\`shell
+{::BODY::}
+\`\`\`
+
+
+\`\`\`javascript
+response status *{::RESPONSE_STATUS::}*
+{::RESPONSE::}
+\`\`\`
+
 {::DESCRIPTION::}
 
 ### HTTP Request
@@ -19,17 +29,6 @@ const stringTMP = `
 | Parameter | Value |
 | --------- | ----- |
 | {::PARAMETER_ID::} | {::PARAMETER_VALUE::} |
-
-> request body json
-\`\`\`json
-{::BODY::}
-\`\`\`
-
-
-> response json with status _{::RESPONSE_STATUS::}_
-\`\`\`json
-{::RESPONSE::}
-\`\`\`
 `;
 //end template string
 

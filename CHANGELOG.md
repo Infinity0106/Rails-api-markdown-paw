@@ -6,7 +6,9 @@ ApiMarkdown to automate your creation of slate documentation based on your paw f
 
 ### Added
 
-- Add documentation of changelog and how to set it up.
+- Generate exporter for paw
+- Create a shell file to generate slate
+- Add .gitignore to ignore node_modules
 
 ### Changed
 
