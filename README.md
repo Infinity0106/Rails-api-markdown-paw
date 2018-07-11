@@ -6,7 +6,7 @@ This app generates a markdown to generate a slate automated documentation
 
 have paw installed in your computer
 
-[PAW](https://mac-torrent-download.net/paw-3-1-7)
+[PAW](https://paw.cloud/)
 
 have node.js
 have nexe `yarn global add nexe`

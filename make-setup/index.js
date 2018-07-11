@@ -58,7 +58,7 @@ cmd.get(
 
           cmd.get(
             `
-            cd slate && bundle install
+            cd slate && bundle install && git remote rm origin
           `,
             (err, data, stderr) => {
               if (err) {
