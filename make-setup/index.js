@@ -9,7 +9,7 @@ const spinner = ora({
 cmd.get(
   `
   ssh-add ~/.ssh/id_rsa_me
-  git clone git@github.com:Infinity0106/slate.git
+  cd slate || (git clone git@github.com:Infinity0106/slate.git && cd slate && git remote rm origin)
   `,
   (err, data, stderr) => {
     if (err) {
@@ -22,7 +22,11 @@ cmd.get(
     }
 
     var arrInclude = [];
-    fs.mkdirSync("slate/source/includes");
+
+    if (!fs.existsSync("slate/source/includes")) {
+      fs.mkdirSync("slate/source/includes");
+    }
+
     fs.readFile(process.argv[2], "utf8", (err, data) => {
       arrInfo = data.split("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
       arrInfo.splice(-1, 1);
@@ -58,7 +62,7 @@ cmd.get(
 
           cmd.get(
             `
-            cd slate && bundle install && git remote rm origin
+            cd slate && bundle install
           `,
             (err, data, stderr) => {
               if (err) {
