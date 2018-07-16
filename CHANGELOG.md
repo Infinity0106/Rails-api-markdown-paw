@@ -20,4 +20,4 @@ ApiMarkdown to automate your creation of slate documentation based on your paw f
 
 ### Fixed
 
-- On second just update files
+- Fix on second run update index no duplicates

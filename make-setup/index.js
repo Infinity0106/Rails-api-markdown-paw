@@ -40,12 +40,18 @@ cmd.get(
             .toLowerCase()
             .replace(/\s/g, "_");
 
-        fs.appendFileSync("slate/source/includes/" + fileName + ".md", element);
+        fs.writeFileSync("slate/source/includes/" + fileName + ".md", element);
         arrInclude.push(fileName.slice(1));
       });
 
       fs.readFile("slate/source/index.html.md", "utf8", (err, data) => {
-        var strTmp = data;
+        var iInit = data.indexOf("#{::INCLUDES_01::}") + 18;
+        var iFin = data.indexOf("#{::INCLUDES_02::}");
+        var strTmp =
+          data.substring(0, iInit) +
+          "\n{::INCLUDES::}\n" +
+          data.substring(iFin, data.length);
+
         arrInclude.forEach(ele => {
           strTmp = strTmp.replace(
             "{::INCLUDES::}",
