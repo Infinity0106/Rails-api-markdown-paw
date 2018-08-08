@@ -28,7 +28,7 @@ cmd.get(
     }
 
     fs.readFile(process.argv[2], "utf8", (err, data) => {
-      arrInfo = data.split("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+      arrInfo = data.split("_______________________________________");
       arrInfo.splice(-1, 1);
       arrInfo.forEach(element => {
         iInicio = element.indexOf("# ");
