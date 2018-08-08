@@ -37,7 +37,7 @@ const exportStringTmp = `
 
 {::DESC::}
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_______________________________________
 
 {::CHILD_RESOURCE::}
 `;
@@ -122,7 +122,7 @@ function exportCode(context, requests, options) {
       exportStrTmp = exportStrTmp.replace("{::CHILD_RESOURCE::}", tmpString);
 
       exportStrTmp += `
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+_______________________________________
 
 {::CHILD_RESOURCE::}`;
     });
