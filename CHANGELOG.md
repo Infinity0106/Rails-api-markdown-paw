@@ -16,6 +16,7 @@ ApiMarkdown to automate your creation of slate documentation based on your paw f
 - remove git remote on clone
 - oficial paw url on readme
 - change split from ~ to \_
+- sort all request by parent title and child title
 
 ### Removed
 

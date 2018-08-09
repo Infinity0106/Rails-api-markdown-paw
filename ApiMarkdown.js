@@ -115,7 +115,7 @@ function exportCode(context, requests, options) {
 
       tmpString += "# " + structure[key].name + "\n";
 
-      structure[key].requests.forEach(ele => {
+      structure[key].requests.sort().forEach(ele => {
         tmpString += previewCode(ele);
       });
 
