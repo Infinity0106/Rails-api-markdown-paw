@@ -68,7 +68,7 @@ cmd.get(
 
           cmd.get(
             `
-            cd slate && bundle install
+            cd slate && gem install bundle && bundle install
           `,
             (err, data, stderr) => {
               if (err) {
